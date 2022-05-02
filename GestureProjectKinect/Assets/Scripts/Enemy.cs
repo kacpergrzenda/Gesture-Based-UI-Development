@@ -36,6 +36,7 @@ public class Enemy : MonoBehaviour
     {
         if(col.tag == "Weapon")
         {
+            GameInformation.score++; // Increment Score by 1 When enemy gets destroyed
             Destroy(gameObject);
         }
     }
