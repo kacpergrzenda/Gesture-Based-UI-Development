@@ -78,6 +78,7 @@
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\JointType.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\ThreadSafeDictionary.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\EventPump.cs" />
+     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\KinectBuffer.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\LongExposureInfraredFrame.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\FrameEdges.cs" />
@@ -131,7 +132,7 @@
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\Expression.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\BodyIndexFrameReader.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\MultiSourceFrameReader.cs" />
-     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
