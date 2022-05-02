@@ -30,4 +30,13 @@ public class Enemy : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target, step);
 
     }
+
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag == "Weapon")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

@@ -2005,8 +2005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53763af5984dfe646ae2949035bddcf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 1
-  enemyCount: 20
+  spawnRate: 0.5
+  enemyCount: 40
   enemy: {fileID: 7115736956205386285, guid: 4349c647ff5a2cb4eb7da90216da4408, type: 3}
   spawnPoints:
   - {fileID: 708400225}
