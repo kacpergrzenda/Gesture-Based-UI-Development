@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
 
     private GameInformation gI;
     /* Public Variables */
-    public int moveSpeed = 5;
+    public int moveSpeed = 1;
 
     // Start is called before the first frame update
     void Start()
