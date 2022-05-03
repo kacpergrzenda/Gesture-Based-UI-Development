@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
 
     /* Private Variables */
     private Vector3 target = new Vector3(0.0f, 1.0f, 0.0f);
+
+    private GameInformation gI;
     /* Public Variables */
     public int moveSpeed = 5;
 
