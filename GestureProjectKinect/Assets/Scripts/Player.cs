@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public  GameObject[] lives;
     /* Private Variabls */
     private int temporaryLife = 3;
+
+    public GameObject deathMenu;
     public void handleLife () {
         
         if(temporaryLife != 0) {
@@ -21,7 +23,8 @@ public class Player : MonoBehaviour
         // GameOver
         if(temporaryLife == 0)
         {
-
+            deathMenu.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 

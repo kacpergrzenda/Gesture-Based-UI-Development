@@ -99,6 +99,7 @@
      <Compile Include="Assets\KinectImports\Standard Assets\ExceptionHelper.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\InfraredFrameArrivedEventArgs.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\ColorFrameReader.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\Body.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\Joint.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\ColorCameraSettings.cs" />
@@ -118,6 +119,7 @@
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\KinectSensor.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\LongExposureInfraredFrameReference.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\ColorFrameReference.cs" />
+     <Compile Include="Assets\Scripts\SelectLevel.cs" />
      <Compile Include="Assets\Scripts\GameInformation.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\FrameCapturedStatus.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\AudioBeamMode.cs" />
@@ -135,8 +137,7 @@
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\Expression.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\BodyIndexFrameReader.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\MultiSourceFrameReader.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\SelectLevel.cs" />
+     <Compile Include="Assets\Scripts\DeathMenu.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
