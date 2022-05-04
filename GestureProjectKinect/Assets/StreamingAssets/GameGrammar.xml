@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<grammar xml:lang="en" tag-format="semantics/1.0" version="1.0" xmlns="http://www.w3.org/2001/06/grammar" root="toplevel">
+
+    <rule id="toplevel">
+        <one-of>
+            <item>
+                <ruleref uri="#mainmenu" />
+            </item>
+        </one-of>
+    </rule>
+
+    <rule id="mainmenu">
+        <one-of>
+            <item>
+                <tag>out.action = "play";</tag>
+                <one-of>
+                    <item>play game</item>
+                    <item>start the game</item>
+                    <item>play</item>
+                    <item>begin game</item>
+                    <item>lets play</item>
+                </one-of>
+            </item>
+            <item>
+                <tag>out.action = "quit";</tag>
+                <one-of>
+                    <item>leave game</item>
+                    <item>leave</item>
+                    <item>finish game</item>
+                    <item>end game</item>
+                    <item>quit game</item>
+                    <item>quit</item>
+                </one-of>
+            </item>
+            <item>
+                <tag>out.action = "levels";</tag>
+                <one-of>
+                    <item>select level</item>
+                    <item>choose level</item>
+                    <item>pick levels</item>
+                    <item>select</item>
+                </one-of>
+            </item>
+            <item>
+                <tag>out.action = "back";</tag>
+                <one-of>
+                    <item>go back</item>
+                    <item>back</item>
+                    <item>go backwards</item>
+                </one-of>
+            </item>
+        </one-of>
+    </rule>
+
+</grammar>
