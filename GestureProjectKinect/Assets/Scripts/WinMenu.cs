@@ -28,6 +28,13 @@ public class WinMenu : MonoBehaviour
         GameInformation.score = 0;
     }
 
+    public void LoadLevelThree()
+    {
+        SceneManager.LoadScene(2);
+        Time.timeScale = 1f;
+        GameInformation.score = 0;
+    }
+
     public void QuitGame ()
     {
         SceneManager.LoadScene(0);

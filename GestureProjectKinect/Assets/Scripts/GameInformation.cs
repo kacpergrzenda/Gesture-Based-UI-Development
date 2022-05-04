@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameInformation : MonoBehaviour
 {
@@ -14,7 +15,15 @@ public class GameInformation : MonoBehaviour
 
     void Update() {
         scoreCountText.text = "SCORE: " + score.ToString();
-        if(score == 5)
+        if(score == 5 && SceneManager.GetActiveScene().name == "MainScene")
+        {
+            Win();
+        }
+        else if(score == 10 && SceneManager.GetActiveScene().name == "LevelTwo")
+        {
+            Win();
+        }
+        else if(score == 15 && SceneManager.GetActiveScene().name == "LevelThree")
         {
             Win();
         }
