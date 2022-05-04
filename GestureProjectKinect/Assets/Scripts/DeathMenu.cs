@@ -11,7 +11,7 @@ public class DeathMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
-        deathMenu.SetActive(true);
+        deathMenu.SetActive(false);
     }
     public void QuitGame ()
     {

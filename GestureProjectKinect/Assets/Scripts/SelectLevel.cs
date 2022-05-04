@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SelectLevel : MonoBehaviour
 {
-    public void LevelOne ()
+    public void LevelOne()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void LevelTwo()
+    {
+        SceneManager.LoadScene(2);
     }
 }

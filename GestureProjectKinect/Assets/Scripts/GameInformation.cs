@@ -13,7 +13,7 @@ public class GameInformation : MonoBehaviour
 
 
     void Update() {
-        scoreCountText.text = "Score: " + score.ToString();
+        scoreCountText.text = "SCORE: " + score.ToString();
         if(score == 5)
         {
             Win();
