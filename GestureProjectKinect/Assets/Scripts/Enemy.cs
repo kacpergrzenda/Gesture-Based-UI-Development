@@ -23,17 +23,12 @@ public class Enemy : MonoBehaviour
     {
         MoveEnemy();
     }
-
-
-
     private void MoveEnemy() {
         var step =  moveSpeed * Time.deltaTime; // calculate distance to move
         //transform.position += new Vector3(moveSpeed * Time.deltaTime, 0, 0);
         transform.position = Vector3.MoveTowards(transform.position, target, step);
 
     }
-
-
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.tag == "Weapon")
