@@ -7,6 +7,18 @@
             <item>
                 <ruleref uri="#mainmenu" />
             </item>
+            <item>
+                <ruleref uri="#levelselect" />
+            </item>
+            <item>
+                <ruleref uri="#win" />
+            </item>
+            <item>
+                <ruleref uri="#pause" />
+            </item>
+            <item>
+                <ruleref uri="#death" />
+            </item>
         </one-of>
     </rule>
 
@@ -48,6 +60,107 @@
                     <item>go back</item>
                     <item>back</item>
                     <item>go backwards</item>
+                </one-of>
+            </item>
+        </one-of>
+    </rule>
+
+    <rule id="levelselect">
+        <one-of>
+            <item>
+                <tag>out.action = "levelone";</tag>
+                <one-of>
+                    <item>select level one</item>
+                    <item>choose level one</item>
+                    <item>pick level one</item>
+                    <item>play level one</item>
+                    <item>one</item>
+                    <item>game mode one</item>
+                    <item>level one</item>
+                </one-of>
+            </item>
+            <item>
+                <tag>out.action = "leveltwo";</tag>
+                <one-of>
+                    <item>select level two</item>
+                    <item>choose level two</item>
+                    <item>pick level two</item>
+                    <item>play level two</item>
+                    <item>two</item>
+                    <item>game mode two</item>
+                    <item>level two</item>
+                </one-of>
+            </item>
+            <item>
+                <tag>out.action = "levelthree";</tag>
+                <one-of>
+                    <item>select level three</item>
+                    <item>choose level three</item>
+                    <item>pick level three</item>
+                    <item>play level three</item>
+                    <item>three</item>
+                    <item>game mode three</item>
+                    <item>level three</item>
+                </one-of>
+            </item>
+        </one-of>
+    </rule>
+
+    <rule id="win">
+        <one-of>
+            <item>
+                <tag>out.action = "winnextlevel";</tag>
+                <one-of>
+                    <item>play next level</item>
+                    <item>next level</item>
+                    <item>play on</item>
+                    <item>level two</item>
+                    <item>one</item>
+                    <item>play</item>
+                </one-of>
+            </item>
+            <item>
+                <tag>out.action = "winquitgame";</tag>
+                <one-of>
+                    <item>quit game</item>
+                    <item>quit</item>
+                    <item>quit level</item>
+                    <item>leave game</item>
+                </one-of>
+            </item>
+        </one-of>
+    </rule>
+
+    <rule id="pause">
+        <one-of>
+            <item>
+                <tag>out.action = "pausegame";</tag>
+                <one-of>
+                    <item>pause game</item>
+                    <item>pause</item>
+                    <item>stop</item>
+                    <item>stop game</item>
+                </one-of>
+            </item>
+            <item>
+                <tag>out.action = "resumegame";</tag>
+                <one-of>
+                    <item>resume game</item>
+                    <item>resume</item>
+                    <item>continue</item>
+                </one-of>
+            </item>
+        </one-of>
+    </rule>
+
+    <rule id="death">
+        <one-of>
+            <item>
+                <tag>out.action = "retry";</tag>
+                <one-of>
+                    <item>retry level</item>
+                    <item>retry</item>
+                    <item>repeat level</item>
                 </one-of>
             </item>
         </one-of>

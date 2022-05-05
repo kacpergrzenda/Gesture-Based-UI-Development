@@ -15,15 +15,15 @@ public class GameInformation : MonoBehaviour
 
     void Update() {
         scoreCountText.text = "SCORE: " + score.ToString();
-        if(score == 5 && SceneManager.GetActiveScene().name == "MainScene")
+        if(score == 30 && SceneManager.GetActiveScene().name == "MainScene")
         {
             Win();
         }
-        else if(score == 10 && SceneManager.GetActiveScene().name == "LevelTwo")
+        else if(score == 40 && SceneManager.GetActiveScene().name == "LevelTwo")
         {
             Win();
         }
-        else if(score == 15 && SceneManager.GetActiveScene().name == "LevelThree")
+        else if(score == 50 && SceneManager.GetActiveScene().name == "LevelThree")
         {
             Win();
         }

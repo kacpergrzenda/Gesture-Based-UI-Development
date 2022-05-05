@@ -30,7 +30,7 @@ public class WinMenu : MonoBehaviour
 
     public void LoadLevelThree()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
         Time.timeScale = 1f;
         GameInformation.score = 0;
     }

@@ -14,15 +14,7 @@ public class SelectLevel : MonoBehaviour
     private string wordValue;
     void Start()
     {
-        gr = new GrammarRecognizer( Path.Combine(Application.streamingAssetsPath, SIMPLE_G), ConfidenceLevel.Low);
-
-        Debug.Log("Grammar is loaded " + gr.GrammarFilePath);
-
-        gr.OnPhraseRecognized += GR_OnPhrasesRecognised;
-
-        gr.Start();
-
-        if (gr.IsRunning) Debug.Log("GR is running.");
+        
     }
 
     private void GR_OnPhrasesRecognised(PhraseRecognizedEventArgs args)
@@ -57,13 +49,13 @@ public class SelectLevel : MonoBehaviour
         switch (wordAction)
         {
             case "levelone" :
-                //StartGame();
+                LevelOne();
                 break;
             case "leveltwo" :
-                //QuitGame();
+                LevelTwo();
                 break;
             case "levelthree" :
-            //QuitGame();
+                LevelThree();
                 break;
             case "back" :
                 Back();
@@ -74,30 +66,45 @@ public class SelectLevel : MonoBehaviour
     }
 
     public void Back() {
-       stopGR();
+       StopGR();
+       mainMenuGM.GetComponent<MainMenu>().StartGR();
        mainMenuGM.SetActive(true);
        gameObject.SetActive(false);
     }
 
     public void LevelOne()
     {
-        stopGR();
+        StopGR(); // Stop GR when loading new scene
         SceneManager.LoadScene(1);
     }
 
     public void LevelTwo()
     {
-        stopGR();
+        StopGR(); // Stop GR when loading new scene
         SceneManager.LoadScene(2);
     }
 
     public void LevelThree()
     {
-        stopGR();
+        StopGR(); // Stop GR when loading new scene
         SceneManager.LoadScene(3);
     }
 
-    private void stopGR() {
+    /* Start The Grammar Recogniser */
+    public void StartGR() {
+        gr = new GrammarRecognizer( Path.Combine(Application.streamingAssetsPath, SIMPLE_G), ConfidenceLevel.Low);
+
+        Debug.Log("Grammar is loaded " + gr.GrammarFilePath);
+
+        gr.OnPhraseRecognized += GR_OnPhrasesRecognised;
+
+        gr.Start();
+
+        if (gr.IsRunning) Debug.Log("GR is running.");
+    }
+
+    /* Stop The Grammar Recogniser */
+    private void StopGR() {
         if (gr != null && gr.IsRunning)
         {
             gr.OnPhraseRecognized -= GR_OnPhrasesRecognised;

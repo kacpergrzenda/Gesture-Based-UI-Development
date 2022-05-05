@@ -15,15 +15,7 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        gr = new GrammarRecognizer( Path.Combine(Application.streamingAssetsPath, SIMPLE_G), ConfidenceLevel.Low);
-
-        Debug.Log("Grammar is loaded " + gr.GrammarFilePath);
-
-        gr.OnPhraseRecognized += GR_OnPhrasesRecognised;
-
-        gr.Start();
-
-        if (gr.IsRunning) Debug.Log("GR is running.");
+        StartGR();
     }
 
     private void GR_OnPhrasesRecognised(PhraseRecognizedEventArgs args)
@@ -91,7 +83,7 @@ public class MainMenu : MonoBehaviour
             Debug.Log("GR has stopped.");
             gr.Stop();
         }
-       
+        levelsGM.GetComponent<SelectLevel>().StartGR();
        levelsGM.SetActive(true);
        gameObject.SetActive(false);
 
@@ -105,7 +97,7 @@ public class MainMenu : MonoBehaviour
 
 
 
-    private void startGR ()
+    public void StartGR ()
     {
         gr = new GrammarRecognizer( Path.Combine(Application.streamingAssetsPath, SIMPLE_G), ConfidenceLevel.Low);
 

@@ -140,6 +140,10 @@
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\Expression.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\BodyIndexFrameReader.cs" />
      <Compile Include="Assets\KinectImports\Standard Assets\Windows\Kinect\MultiSourceFrameReader.cs" />
+     <Compile Include="Assets\Scripts\VoiceController.cs" />
+     <Compile Include="Assets\Scripts\VoiceWinMenu.cs" />
+     <Compile Include="Assets\Scripts\AudioController.cs" />
+     <Compile Include="Assets\Scripts\CountdownController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
