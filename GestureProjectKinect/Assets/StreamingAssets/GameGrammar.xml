@@ -62,6 +62,17 @@
                     <item>go backwards</item>
                 </one-of>
             </item>
+            <item>
+                <tag>out.action = "music";</tag>
+                <one-of>
+                    <item>music button</item>
+                    <item>adjust music</item>
+                    <item>music</item>
+                    <item>click music</item>
+                    <item>play music</item>
+                    <item>mute music</item>
+                </one-of>
+            </item>
         </one-of>
     </rule>
 

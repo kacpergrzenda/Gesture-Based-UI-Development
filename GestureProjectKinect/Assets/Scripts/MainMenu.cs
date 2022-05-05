@@ -58,6 +58,9 @@ public class MainMenu : MonoBehaviour
             case "levels" :
                 PickLevel();
                 break;
+            case "music" :
+                AudioController.CheckMusic();
+                break;
             default:
                 break;
         }

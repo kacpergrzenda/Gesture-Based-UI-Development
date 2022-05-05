@@ -17,13 +17,17 @@ public class AudioController : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    // public static void CheckMusic() {
-    //     if(audioData.mute == true)
-    //     {
-    //         audioData.mute = false;
-    //     }
-    //     else if (audioData.mute == false) {
-    //         audioData.mute = true;
-    //     }
-    // }
+    public static void CheckMusic() {
+        if(audioData.mute == true)
+        {
+            GameObject.Find("Canvas/MainMenu/MusicButton").SetActive(true);
+            GameObject.Find("Canvas/MainMenu/MuteButton").SetActive(false);
+            audioData.mute = false;
+        }
+        else if (audioData.mute == false) {
+            GameObject.Find("Canvas/MainMenu/MusicButton").SetActive(false);
+            GameObject.Find("Canvas/MainMenu/MuteButton").SetActive(true);
+            audioData.mute = true;
+        }
+    }
 }
